@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GUNDAM ARSENAL — Flagship Gunpla & Hobby Boutique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient Background Glows -->
+<div class="ambient-glow glow-1" aria-hidden="true"></div>
+<div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+<!-- ===== HUD HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">RX</span>
+      <div class="brand-copy">
+        <span class="brand-text">GUNDAM <b>ARSENAL</b></span>
+        <span class="brand-sub">COLLECTOR EDITION BOUTIQUE</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <a href="#catalog">KHO HÀNG</a>
+      <a href="#about">PHÂN CẤP GRADE</a>
+      <a href="#contact">LIÊN HỆ</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="account-wrap">
+        <button id="accountBtn" class="icon-btn" type="button" aria-label="Tài khoản">
+          <span class="btn-icon">👤</span>
+          <span id="accountLabel">ĐĂNG NHẬP</span>
+        </button>
+        <div id="accountMenu" class="account-menu">
+          <div id="accountUserHeader" class="account-user-header"></div>
+          <button id="profileBtn" type="button" class="account-menu-item">🪪 HỒ SƠ & ĐỊA CHỈ</button>
+          <button id="myOrdersBtn" type="button" class="account-menu-item">📦 ĐƠN HÀNG CỦA TÔI</button>
+          <button id="customerLogoutBtn" type="button" class="account-menu-item danger">⏻ ĐĂNG XUẤT</button>
+        </div>
+      </div>
+
+      <button id="cartBtn" class="icon-btn cart-trigger" type="button" aria-label="Giỏ hàng">
+        <span class="btn-icon">🛒</span>
+        <span class="cart-label">GIỎ</span>
+        <span id="cartCount" class="cart-count">0</span>
+      </button>
+
+      <button id="adminBtn" class="icon-btn ghost" type="button">⚙ ADMIN</button>
+    </div>
+  </div>
+  <div class="header-stripe"></div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-tag">
+      <span class="pulse-dot"></span>
+      MOBILE SUIT SUPPLY DEPOT · ANAHEIM CERTIFIED · EST. UC 0079
+    </div>
+    <h1 class="hero-title">
+      TUYỂN CHỌN<br>
+      TUYỆT TÁC <span class="accent-gold">GUNPLA</span><br>
+      ĐẲNG CẤP SƯU TẦM
+    </h1>
+    <p class="hero-sub">
+      Từ dòng Entry/High Grade tinh gọn đến siêu phẩm Perfect Grade Unleashed — cam kết 100% chính hãng Bandai Namco Nhật Bản, đóng gói tiêu chuẩn sưu tầm không móp hộp.
+    </p>
+    <div class="hero-actions">
+      <a href="#catalog" class="btn btn-primary">KHÁM PHÁ KHO HÀNG</a>
+      <a href="#about" class="btn btn-outline">TÌM HIỂU CÁC GRADE</a>
+    </div>
+
+    <div class="hero-metrics">
+      <div class="metric-item">
+        <span class="metric-val">100%</span>
+        <span class="metric-label">Bandai Chính Hãng</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-val">5 CẤP</span>
+        <span class="metric-label">SD · HG · RG · MG · PG</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-val">3 LỚP</span>
+        <span class="metric-label">Đóng Gói Bảo Vệ Hộp</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-showcase">
+    <div class="hero-plate">
+      <div class="plate-header">
+        <span class="plate-badge">FLAGSHIP ARCHIVE // 01</span>
+        <span class="status-ok">● IN STOCK</span>
+      </div>
+      <div class="plate-visual">
+        <div class="mecha-emblem">RX-78-2</div>
+        <div class="plate-sub-caption">E.F.S.F. PROTOTYPE CLOSE-COMBAT MOBILE SUIT</div>
+      </div>
+      <div class="plate-specs">
+        <div class="plate-row"><span>DESIGNATION</span><span>RX-78-2 GUNDAM UNLEASHED</span></div>
+        <div class="plate-row"><span>CLASSIFICATION</span><span class="gold-text">PERFECT GRADE (PG)</span></div>
+        <div class="plate-row"><span>SCALE RATIO</span><span>1/60 (300mm HEIGHT)</span></div>
+        <div class="plate-row"><span>INTERNAL FRAME</span><span>MULTI-LAYERED TRUSS FRAME</span></div>
+      </div>
+      <div class="plate-bars">
+        <div class="bar-item">
+          <div class="bar-label"><span>ĐỘ CHI TIẾT CƠ KHÍ</span><span>99%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:99%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>BIÊN ĐỘ KHỚP ĐỘNG</span><span>95%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FILTER / CATALOG ===== -->
+<section class="catalog" id="catalog">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">// ARCHIVE INVENTORY</div>
+      <h2>KHO HÀNG CHÍNH HÃNG</h2>
+      <p>Tra cứu mô hình hoặc dụng cụ chuyên dụng, lọc theo phân khúc và cấp độ Grade.</p>
+    </div>
+    <div id="apiStatusBadge" class="api-status-badge" style="display:none"></div>
+  </div>
+
+  <div class="catalog-controls">
+    <div class="search-and-sort">
+      <div class="search-bar">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="text" id="searchInput" placeholder="Tìm theo tên mẫu, mã hiệu hoặc series (VD: Unicorn, Aerial, kìm cắt...)" autocomplete="off">
+        <button type="button" id="clearSearchBtn" class="clear-search-btn" title="Xoá tìm kiếm" style="display:none">✕</button>
+      </div>
+
+      <div class="sort-wrap">
+        <label for="sortSelect" class="sr-only">Sắp xếp</label>
+        <select id="sortSelect" class="sort-select">
+          <option value="default">Sắp xếp: Mặc định</option>
+          <option value="price-asc">Giá: Thấp → Cao</option>
+          <option value="price-desc">Giá: Cao → Thấp</option>
+          <option value="name-asc">Tên: A → Z</option>
+          <option value="stock-desc">Tồn kho nhiều nhất</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="filters-row">
+      <div class="filter-bar category-bar" id="categoryBar" role="tablist" aria-label="Danh mục">
+        <button type="button" class="chip active" data-category="ALL">TẤT CẢ DANH MỤC</button>
+        <button type="button" class="chip" data-category="model">🤖 MÔ HÌNH GUNPLA</button>
+        <button type="button" class="chip" data-category="accessory">🛠️ DỤNG CỤ & PHỤ KIỆN</button>
+      </div>
+
+      <div class="filter-bar grade-bar" id="filterBar" role="tablist" aria-label="Grade">
+        <button type="button" class="chip active" data-grade="ALL">MỌI GRADE</button>
+        <button type="button" class="chip" data-grade="SD">SD</button>
+        <button type="button" class="chip" data-grade="HG">HG</button>
+        <button type="button" class="chip" data-grade="RG">RG</button>
+        <button type="button" class="chip" data-grade="MG">MG</button>
+        <button type="button" class="chip" data-grade="PG">PG</button>
+      </div>
+    </div>
+
+    <div class="catalog-meta-bar">
+      <span id="resultCountText" class="result-count">Đang tải danh mục...</span>
+      <button type="button" id="resetFiltersBtn" class="reset-filter-link" style="display:none">Đặt lại bộ lọc ↺</button>
+    </div>
+  </div>
+
+  <div class="product-grid" id="productGrid">
+    <!-- Sản phẩm được JS render vào đây -->
+  </div>
+</section>
+
+<!-- ===== ABOUT / GRADE GUIDE ===== -->
+<section class="grade-guide" id="about">
+  <div class="section-head">
+    <div>
+      <div class="section-eyebrow">// TECHNICAL CLASSIFICATION</div>
+      <h2>BẢNG PHÂN CẤP GRADE</h2>
+      <p>Mỗi cấp độ (Grade) đại diện cho tỷ lệ thu nhỏ, cấu trúc khung xương và trải nghiệm lắp ráp riêng biệt.</p>
+    </div>
+  </div>
+
+  <div class="grade-table-wrap">
+    <div class="grade-table">
+      <div class="grade-row head">
+        <span>CẤP ĐỘ</span>
+        <span>TỶ LỆ CHUẨN</span>
+        <span>ĐỘ PHỨC TẠP</span>
+        <span>ĐẶC ĐIỂM & ĐỐI TƯỢNG PHÙ HỢP</span>
+      </div>
+      <div class="grade-row">
+        <span><span class="tag tag-sd">SD</span></span>
+        <span class="mono-cell">Non-scale (~8cm)</span>
+        <span class="stars-cell">★☆☆☆☆</span>
+        <span>Tỷ lệ Chibi đầu lớn dễ thương, ít chi tiết, lắp nhanh không cần dụng cụ phức tạp.</span>
+      </div>
+      <div class="grade-row">
+        <span><span class="tag tag-hg">HG</span></span>
+        <span class="mono-cell">1/144 (~12.5cm)</span>
+        <span class="stars-cell">★★☆☆☆</span>
+        <span>Dòng phổ biến nhất, đa dạng mẫu mã, biên độ cử động tốt, lý tưởng cho người mới bắt đầu.</span>
+      </div>
+      <div class="grade-row">
+        <span><span class="tag tag-rg">RG</span></span>
+        <span class="mono-cell">1/144 (~12.5cm)</span>
+        <span class="stars-cell">★★★★☆</span>
+        <span>Thu nhỏ tinh hoa của MG vào kích thước 1/144: có khung xương trong, tách màu giáp cực kỳ chi tiết.</span>
+      </div>
+      <div class="grade-row">
+        <span><span class="tag tag-mg">MG</span></span>
+        <span class="mono-cell">1/100 (~18cm)</span>
+        <span class="stars-cell">★★★★☆</span>
+        <span>Kích thước lớn, khung xương cơ khí toàn diện, buồng lái mở được, trải nghiệm lắp ráp chuẩn mực.</span>
+      </div>
+      <div class="grade-row">
+        <span><span class="tag tag-pg">PG</span></span>
+        <span class="mono-cell">1/60 (~30cm)</span>
+        <span class="stars-cell">★★★★★</span>
+        <span>Đỉnh cao công nghệ Bandai: hàng ngàn mảnh ghép, chi tiết kim loại, hệ thống LED và mở giáp tối đa.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER / CONTACT ===== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand-col">
+      <div class="brand">
+        <span class="brand-mark">RX</span>
+        <div class="brand-copy">
+          <span class="brand-text">GUNDAM <b>ARSENAL</b></span>
+          <span class="brand-sub">COLLECTOR EDITION BOUTIQUE</span>
+        </div>
+      </div>
+      <p class="footer-desc">Không gian sưu tầm mô hình Gunpla & dụng cụ Hobby chuyên nghiệp. Hệ thống quản lý kho hàng, giỏ hàng và đơn hàng trực tuyến.</p>
+    </div>
+    <div>
+      <div class="footer-label">TRUNG TÂM LIÊN HỆ</div>
+      <p>Hotline: <strong class="text-bright">0900‑000‑079</strong><br>Email: <strong class="text-bright">arsenal@gunpla.vn</strong><br>Showroom: Quận 1, TP. Hồ Chí Minh</p>
+    </div>
+    <div>
+      <div class="footer-label">GIỜ HOẠT ĐỘNG</div>
+      <p>Thứ 2 – Chủ Nhật: <strong class="text-bright">08:00 – 21:30</strong><br>Hỗ trợ kỹ thuật & bảo hành mảnh ghép trực tuyến 24/7.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 GUNDAM ARSENAL. All rights reserved.</span>
+    <span>SYSTEM STATUS: ONLINE</span>
+  </div>
+</footer>
+
+<!-- ===== PRODUCT DETAIL / QUICK VIEW MODAL ===== -->
+<div id="detailOverlay" class="overlay"></div>
+<div id="detailModal" class="modal modal-detail" role="dialog" aria-modal="true" aria-labelledby="detailName">
+  <div class="modal-head">
+    <h3 id="detailHeaderCode">THÔNG SỐ KỸ THUẬT</h3>
+    <button id="closeDetail" type="button" class="icon-btn" aria-label="Đóng">✕</button>
+  </div>
+  <div id="detailContent" class="detail-body"></div>
+</div>
+
+<!-- ===== CART DRAWER ===== -->
+<div id="cartOverlay" class="overlay"></div>
+<aside id="cartDrawer" class="drawer" aria-label="Giỏ hàng">
+  <div class="drawer-head">
+    <div>
+      <h3>GIỎ HÀNG CỦA BẠN</h3>
+      <span id="cartDrawerSub" class="drawer-sub">0 sản phẩm đã chọn</span>
+    </div>
+    <button id="closeCart" type="button" class="icon-btn" aria-label="Đóng giỏ hàng">✕</button>
+  </div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>TỔNG TẠM TÍNH</span>
+      <span id="cartTotal">0₫</span>
+    </div>
+    <div class="cart-footer-actions">
+      <button id="clearCartBtn" type="button" class="btn btn-outline btn-sm" style="display:none">XOÁ GIỎ</button>
+      <button id="checkoutBtn" type="button" class="btn btn-primary btn-block">TIẾN HÀNH ĐẶT HÀNG →</button>
+    </div>
+  </div>
+</aside>
+
+<!-- ===== CHECKOUT MODAL ===== -->
+<div id="checkoutOverlay" class="overlay"></div>
+<div id="checkoutModal" class="modal modal-checkout" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle">
+  <div class="modal-head">
+    <h3 id="checkoutModalTitle">XÁC NHẬN ĐẶT HÀNG</h3>
+    <button id="closeCheckout" type="button" class="icon-btn" aria-label="Đóng">✕</button>
+  </div>
+
+  <div class="checkout-summary-box">
+    <div class="summary-head">
+      <span>TÓM TẮT ĐƠN HÀNG</span>
+      <span id="checkoutModeBadge" class="summary-badge">GIỎ HÀNG</span>
+    </div>
+    <div id="checkoutSummaryItems" class="summary-items"></div>
+    <div class="summary-total-row">
+      <span>TỔNG THANH TOÁN</span>
+      <span id="checkoutTotalAmount">0₫</span>
+    </div>
+  </div>
+
+  <form id="checkoutForm" class="form">
+    <div class="form-row">
+      <label>Họ và tên người nhận *
+        <input type="text" id="custName" required placeholder="Nguyễn Văn A">
+      </label>
+      <label>Số điện thoại liên hệ *
+        <input type="tel" id="custPhone" required pattern="[0-9+\-\s]{9,15}" placeholder="09xxxxxxxx">
+      </label>
+    </div>
+    <label>Địa chỉ nhận hàng chi tiết *
+      <textarea id="custAddress" required placeholder="Số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành phố"></textarea>
+    </label>
+    <label>Ghi chú giao hàng (tuỳ chọn)
+      <textarea id="custNote" placeholder="Ví dụ: Giao giờ hành chính, gọi trước khi giao..."></textarea>
+    </label>
+    <button type="submit" class="btn btn-primary btn-block">HOÀN TẤT ĐẶT HÀNG</button>
+  </form>
+</div>
+
+<!-- ===== CUSTOMER AUTH MODAL ===== -->
+<div id="authOverlay" class="overlay"></div>
+<div id="authModal" class="modal small" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <div class="modal-head">
+    <h3 id="authTitle">ĐĂNG NHẬP TÀI KHOẢN</h3>
+    <button id="closeAuth" type="button" class="icon-btn" aria-label="Đóng">✕</button>
+  </div>
+  <div class="auth-tabs">
+    <button type="button" class="auth-tab active" data-mode="login">ĐĂNG NHẬP</button>
+    <button type="button" class="auth-tab" data-mode="register">ĐĂNG KÝ MỚI</button>
+  </div>
+
+  <form id="loginForm" class="form">
+    <label>Địa chỉ Email
+      <input type="email" id="loginEmail" required placeholder="pilot@gunpla.vn">
+    </label>
+    <label>Mật khẩu
+      <input type="password" id="loginPassword" required placeholder="••••••••">
+    </label>
+    <button type="submit" class="btn btn-primary btn-block">ĐĂNG NHẬP NGAY</button>
+  </form>
+
+  <form id="registerForm" class="form" style="display:none">
+    <label>Họ và tên *
+      <input type="text" id="regName" required placeholder="Nguyễn Văn A">
+    </label>
+    <label>Địa chỉ Email *
+      <input type="email" id="regEmail" required placeholder="pilot@gunpla.vn">
+    </label>
+    <label>Số điện thoại *
+      <input type="tel" id="regPhone" required placeholder="09xxxxxxxx">
+    </label>
+    <label>Địa chỉ nhận hàng mặc định (tuỳ chọn)
+      <input type="text" id="regAddress" placeholder="Số nhà, đường, quận/huyện, tỉnh/thành">
+    </label>
+    <label>Mật khẩu *
+      <input type="password" id="regPassword" required minlength="4" placeholder="Tối thiểu 4 ký tự">
+    </label>
+    <button type="submit" class="btn btn-primary btn-block">TẠO TÀI KHOẢN</button>
+  </form>
+</div>
+
+<!-- ===== USER PROFILE MODAL ===== -->
+<div id="profileOverlay" class="overlay"></div>
+<div id="profileModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+  <div class="modal-head">
+    <h3 id="profileModalTitle">HỒ SƠ CÁ NHÂN & ĐỊA CHỈ</h3>
+    <button id="closeProfile" type="button" class="icon-btn" aria-label="Đóng">✕</button>
+  </div>
+  <form id="profileForm" class="form">
+    <label>Địa chỉ Email (Định danh tài khoản)
+      <input type="email" id="profEmail" disabled>
+    </label>
+    <div class="form-row">
+      <label>Họ và tên *
+        <input type="text" id="profName" required placeholder="Nguyễn Văn A">
+      </label>
+      <label>Số điện thoại *
+        <input type="tel" id="profPhone" required placeholder="09xxxxxxxx">
+      </label>
+    </div>
+    <label>Địa chỉ giao hàng mặc định
+      <textarea id="profAddress" placeholder="Lưu sẵn địa chỉ để tự động điền khi đặt hàng..."></textarea>
+    </label>
+    <label>Đổi mật khẩu mới (để trống nếu giữ nguyên)
+      <input type="password" id="profNewPassword" minlength="4" placeholder="Nhập mật khẩu mới nếu muốn thay đổi">
+    </label>
+    <button type="submit" class="btn btn-primary btn-block">LƯU HỒ SƠ VÀO CSDL</button>
+  </form>
+</div>
+
+<!-- ===== MY ORDERS MODAL ===== -->
+<div id="myOrdersOverlay" class="overlay"></div>
+<div id="myOrdersModal" class="modal modal-orders" role="dialog" aria-modal="true">
+  <div class="modal-head">
+    <h3>LỊCH SỬ ĐƠN HÀNG CỦA TÔI</h3>
+    <button id="closeMyOrders" type="button" class="icon-btn" aria-label="Đóng">✕</button>
+  </div>
+  <div id="myOrdersList" class="admin-order-list modal-scroll-area"></div>
+</div>
+
+<!-- ===== ADMIN LOGIN MODAL ===== -->
+<div id="adminLoginOverlay" class="overlay"></div>
+<div id="adminLoginModal" class="modal small" role="dialog" aria-modal="true">
+  <div class="modal-head">
+    <h3>XÁC THỰC QUẢN TRỊ VIÊN</h3>
+    <button id="closeAdminLogin" type="button" class="icon-btn" aria-label="Đóng">✕</button>
+  </div>
+  <form id="adminLoginForm" class="form">
+    <label>Tài khoản Admin
+      <input type="text" id="adminUser" required placeholder="admin" autocomplete="username">
+    </label>
+    <label>Mật khẩu
+      <input type="password" id="adminPass" required placeholder="••••••••" autocomplete="current-password">
+    </label>
+    <p class="hint">Tài khoản mặc định: <b>admin</b> / <b>gundam123</b></p>
+    <button type="submit" class="btn btn-primary btn-block">TRUY CẬP HỆ THỐNG</button>
+  </form>
+</div>
+
+<!-- ===== ADMIN PANEL ===== -->
+<div id="adminOverlay" class="overlay"></div>
+<div id="adminPanel" class="admin-panel" role="dialog" aria-modal="true">
+  <div class="admin-head">
+    <div class="admin-head-title">
+      <span class="brand-mark">COMMAND</span>
+      <h2>BẢNG ĐIỀU KHIỂN QUẢN TRỊ KHO HÀNG & CSDL</h2>
+    </div>
+    <div class="admin-head-actions">
+      <button id="adminLogoutBtn" type="button" class="btn btn-outline btn-sm">ĐĂNG XUẤT ADMIN</button>
+      <button id="closeAdmin" type="button" class="icon-btn" aria-label="Đóng bảng quản trị">✕</button>
+    </div>
+  </div>
+
+  <div class="admin-tabs">
+    <button type="button" class="admin-tab active" data-tab="products">QUẢN LÝ SẢN PHẨM</button>
+    <button type="button" class="admin-tab" data-tab="orders">QUẢN LÝ ĐƠN HÀNG</button>
+    <button type="button" class="admin-tab" data-tab="customers">DỮ LIỆU NGƯỜI DÙNG</button>
+  </div>
+
+  <!-- TAB: PRODUCTS -->
+  <div id="tab-products" class="admin-tab-panel active">
+    <div class="admin-columns">
+      <div class="admin-form-col">
+        <h4 id="productFormTitle">THÊM SẢN PHẨM MỚI</h4>
+        <form id="productForm" class="form">
+          <input type="hidden" id="pEditId" value="">
+          <label>Danh mục phân loại
+            <select id="pCategory" required>
+              <option value="model">Mô hình Gunpla</option>
+              <option value="accessory">Dụng cụ & Phụ kiện</option>
+            </select>
+          </label>
+          <label>Tên sản phẩm *
+            <input type="text" id="pName" required placeholder="VD: RG RX-93-v2 Hi-Nu Gundam">
+          </label>
+          <label>Series / Thương hiệu *
+            <input type="text" id="pSeries" required placeholder="VD: Char's Counterattack">
+          </label>
+          <div class="form-row" id="gradeFieldRow">
+            <label>Cấp độ Grade
+              <select id="pGrade">
+                <option value="SD">SD</option>
+                <option value="HG">HG</option>
+                <option value="RG">RG</option>
+                <option value="MG">MG</option>
+                <option value="PG">PG</option>
+              </select>
+            </label>
+            <label>Tỷ lệ Scale
+              <input type="text" id="pScale" placeholder="1/144">
+            </label>
+          </div>
+          <div class="form-row" id="accessoryFieldRow" style="display:none">
+            <label>Nhóm phụ kiện
+              <select id="pAccessoryType">
+                <option value="Dụng cụ lắp ráp">Dụng cụ lắp ráp</option>
+                <option value="Sơn & màu vẽ">Sơn & màu vẽ</option>
+                <option value="Đế trưng bày">Đế trưng bày</option>
+                <option value="Phụ kiện khác">Phụ kiện khác</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Đơn giá (₫) *
+              <input type="number" id="pPrice" required min="0" step="1000" placeholder="450000">
+            </label>
+            <label>Số lượng tồn kho *
+              <input type="number" id="pStock" required min="0" step="1" placeholder="20">
+            </label>
+          </div>
+          <label>Đường dẫn ảnh (URL)
+            <input type="url" id="pImage" placeholder="https://...">
+          </label>
+          <label>Mô tả chi tiết
+            <textarea id="pDesc" placeholder="Thông tin điểm nổi bật, phụ kiện đi kèm trong hộp..."></textarea>
+          </label>
+          <div class="form-row">
+            <button type="submit" id="productSubmitBtn" class="btn btn-primary btn-block">THÊM SẢN PHẨM</button>
+            <button type="button" id="cancelEditBtn" class="btn btn-outline btn-block" style="display:none">HUỶ CHỈNH SỬA</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="admin-list-col">
+        <div class="admin-list-header">
+          <h4>DANH SÁCH KHO HÀNG (<span id="adminProductCount">0</span>)</h4>
+        </div>
+        <div id="adminProductList" class="admin-product-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: ORDERS -->
+  <div id="tab-orders" class="admin-tab-panel">
+    <div class="admin-list-header">
+      <h4>DANH SÁCH ĐƠN ĐẶT HÀNG (<span id="adminOrderCount">0</span>)</h4>
+    </div>
+    <div id="adminOrderList" class="admin-order-list"></div>
+  </div>
+
+  <!-- TAB: CUSTOMERS (DỮ LIỆU NGƯỜI DÙNG) -->
+  <div id="tab-customers" class="admin-tab-panel">
+    <div class="admin-list-header">
+      <h4>DANH SÁCH TÀI KHOẢN NGƯỜI DÙNG TRONG CSDL (<span id="adminCustomerCount">0</span>)</h4>
+    </div>
+    <div id="adminCustomerList" class="admin-order-list"></div>
+  </div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
